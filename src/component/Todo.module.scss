@@ -1,0 +1,95 @@
+
+.todoList {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 4rem;
+    color: white;
+  }
+
+  button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+
+  .addButton {
+    background-color: greenyellow;
+
+    &:hover {
+      background-color: green;
+    }
+  }
+
+  .deleteButton {
+    background-color: red;
+
+    &:hover {
+      background-color: #d93535;
+    }
+  }
+
+  .moveUpButton, .moveDownButton {
+    background-color: inherit;
+
+    &:hover {
+      background-color: #dcdbdb;
+    }
+  }
+
+  input[type='text'] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid #d5d5d5;
+    border-radius: 5px;
+    color: rgb(14, 6, 6);
+    margin-right: 5px;
+  }
+
+  ol {
+    padding: 0;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  li {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgba(248, 245, 245, 0.97);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid rgba(227, 226, 226, 0.9);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .text {
+    flex: 1;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+
+  .deleteButton, .moveUpButton, .moveDownButton {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 452px) {
+    input[type='text'] {
+    margin-bottom: 30px;
+    }
+  }
+}
